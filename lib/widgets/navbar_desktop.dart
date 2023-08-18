@@ -1,4 +1,5 @@
 import 'package:dating_app/helpers/style.dart';
+import 'package:dating_app/widgets/custom_button.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -91,7 +92,7 @@ class _NavBarState extends State<NavBar> {
                         height: 12,
                       ),
                       Text(
-                        'Download',
+                        'Log In',
                         style: GoogleFonts.roboto(
                           fontSize: 16,
                           fontWeight: FontWeight.bold,
@@ -121,7 +122,11 @@ class _NavBarState extends State<NavBar> {
                   width: screenSize.width / 20,
                 ),
               ],
-            ))
+            )),
+            const CustomButton(text: 'Register'),
+            SizedBox(
+              width: screenSize.width / 40,
+            ),
           ],
         ),
       ),
